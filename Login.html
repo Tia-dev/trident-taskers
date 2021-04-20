@@ -29,27 +29,35 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        
+       
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Login</title>
+        <link rel="stylesheet" href="css/Background.css">
+        <title>Trident Taskers</title>
     </head>
     <body>
         <script src="cordova.js"></script>
 		<script src="js/12-pouchdb-7.0.0.min.js"></script> 
         <script src="js/index.js"></script>
+		<script src="js/signup.js"></script>
 		
+		<div class = "loginbox">
+
+		
+		<h1>Login</h1>
 		<form name="input">
-		          Username:<input type="text" name="username" id="username"/><br/>
-				  Password:<input type="password" name="pword" id="pword"/><br/>
+<input type="text" id="username" placeholder="username"/>
+<input type="password" id="pwordre" placeholder="password"/>
+<input type="button" value="Submit" onClick="userCheck()"/> 
+		<a href="indexv3.html">Back</a>
+		<a href="Taskers.html">List of Taskers</a>
+		
+		</div>
+	 
 			   </form>
-					<br/><br/>
-					Click <a href=Taskers.html>here</a>to view all the taskers 
-					<br></br>
-					Click<a href=index.html>here</a>to return  to home page 
-					</div>
+
     </body>
+	
 </html>

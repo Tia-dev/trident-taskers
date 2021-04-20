@@ -29,26 +29,30 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        
+       
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/Background.css">
-        <title>Taskers</title>
+        <title>Trident Taskers</title>
     </head>
     <body>
-	
-	<div class = "loginbox">
         <script src="cordova.js"></script>
-	    <script src="js/12-pouchdb-7.0.0.min.js"></script> 
+		<script src="js/12-pouchdb-7.0.0.min.js"></script> 
         <script src="js/index.js"></script>
 		
-				<h1>Taskers List</h1>
-		<div id="result">
-						<button onclick="ListTaskers()">List of Taskers</button>
-						
-		<p> <a href="indexv2.html">Back</a>
-					
+		<div class = "loginbox">
+		<h1>Welcome to Trident Taskers</h1>
+		<form action="Login.html">
+		<input type = "Submit" name="" value="Login">
+		</form>
+		
+		<form action="Signv2.html">
+		<input type = "Submit" name="" value="Sign Up">
+		</form>
+		</div>
+
     </body>
+	
 </html>
